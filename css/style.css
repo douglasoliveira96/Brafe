@@ -21,7 +21,6 @@ body {
 * {    
     box-sizing: border-box;    
 }
-
 .container {
     display: flex;
     max-width: 960px;
