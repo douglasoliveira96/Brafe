@@ -3,6 +3,11 @@ body, p, h1, h2, ul, li {
     padding: 0px;
 }
 
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
 li {
     list-style: none;
 }

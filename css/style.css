@@ -27,6 +27,11 @@ body {
     margin: 0 auto;
 }
 
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
 @media (max-width: 739px) {
     .container {
         flex-direction: column;

@@ -1,0 +1,268 @@
+body, p, h1, ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #252525;
+    background: #e7e4d8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    background: #d6d3c8;
+    padding: 20px;
+}
+
+.header::after, .header::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-menu ul {
+    float: right;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu li a {
+    color: #252525;
+    font-size: 1.125em;
+    padding: 0 10px;
+}
+
+.header-menu li:first-child a {
+    padding-left: 0px;
+}
+
+@media (max-width: 739px) {
+    .header-logo {
+        float: none;
+    }
+    .header-menu ul {
+        float: none;
+        margin-top: 10px;
+    }
+}
+
+
+/* Main */
+
+.main-container {
+    display: flex;
+}
+
+@media (max-width: 739px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+
+/* Side-Nav */
+
+.side-nav {
+    width: 300px;
+    background: #252525;
+}
+
+.side-nav li a {
+    display: block;
+    color: #fff;
+    border-bottom: 2px solid #484846;
+    font-size: 1.125em;
+    padding: 20px 20px 20px 20px;
+}
+
+/*                                                
+.side-nav li a::before {
+    content: '';
+    display: inline-block;      Para adicionar ícones png ao 
+    width: 24px;                ao lado da barra          
+    height: 24px;               lateral
+    background-image: ;
+}
+*/
+
+@media (min-width: 740px) and (max-width: 980px) {
+   .side-nav {
+       width: 200px;
+   }
+}
+
+@media (max-width: 739px) {
+    .side-nav {
+        margin: 20px 0 0 20px;
+        background: none;
+        width: auto;
+    }
+    .side-nav li {
+        display: inline-block;
+    }   
+    .side-nav li a {
+        color: black;
+        padding: 10px;
+    } 
+}
+
+
+/* Produtos */
+
+.produtos { 
+    float: left;
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+.produtos header::after, .produtos header::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.produtos h1 {
+    font-size: 2.25em;
+    float: left;    
+}
+
+.adicionar-produtos {
+    background: #c17139;
+    color: #e7e4d8;
+    font-size: 1.125em;
+    font-family: Courier, monospace;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 4px;
+    float: right;
+    text-align: center;
+}
+ 
+.produtos-item {
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .35);
+    margin-top: 20px;
+    position: relative;
+}
+
+.produtos-item::after, .produtos-item::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.produtos-item img {
+    float: left;
+
+}
+
+.produtos-item a {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    text-indent: -200px;
+    position: absolute; 
+    right: 20px;
+    background: url(#) no-repeat;
+}
+
+.produtos-item a:hover {
+    background: url(#) no-repeat;
+}
+
+.produtos-item ul {
+    float: left;
+    padding: 0 20px;
+    width: calc(100% - 189px);
+}
+
+.produtos-item li {
+    padding: 20px 0;
+    font-size: 1.125em;
+    font-family: courier, monospace;
+    border-bottom: 1px solid #e7e4d8;
+}
+
+.produtos-item li:last-child {
+    border: none;
+}
+
+.produtos-item span {
+    font-weight: bold;
+    width: 70px;
+    display: inline-block;
+}
+
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .produtos {
+        width: calc(100% - 200px);
+    }
+ }
+ 
+ @media (max-width: 739px) {     
+    .produtos {
+        width: 100%;
+    }
+    .produtos h1 {
+        float: none;
+    }
+    .adicionar-produtos {
+        float: none;
+        display: inline-block;
+        margin: 10% 0;
+    }
+    .produtos-item img {
+        float: none;
+    }
+    .produtos-item ul {
+        float: none;
+        width: 100%;
+    }
+ }
+
+ /* Footer */
+
+.footer {
+    background: #d6d3c8;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+
+
