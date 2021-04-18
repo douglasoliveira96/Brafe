@@ -1,6 +1,6 @@
-# Brafé
+# ☕ Brafé 
 ## Criei um site fictício de cafeteria usando HTML e CSS
-### Acesse clicando no link 👉 https://brafe-teste.netlify.app/
+### Acesse clicando no link 👉 https://brafe-teste.netlify.app/ 👈
  
 ![2021-04-14](https://user-images.githubusercontent.com/79033956/114781935-bb94cb00-9d4f-11eb-885e-d77a401152d9.jpg)
 
